@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("cheetah", "for cheetah support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("cheetah", "enable cheetah support", "no");
+
+if (PHP_CHEETAH != "no") {
+	EXTENSION("cheetah", "cheetah.c");
+}
+
